@@ -1,41 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body class="w3-content" style="max-width:1300px">
 
-  	<head>
-    	<meta charset="UTF-8">
-    	<link href="styles/style.css" rel="stylesheet">
-    	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    	<title>Berke Tuna</title>
-  	</head>
+<!-- First Grid: Logo & About -->
+<div class="w3-row">
+  <div class="w3-half w3-black w3-container w3-center" style="height:700px">
+    <div class="w3-padding-64">
+      <h1>Berke Tuna</h1>
+    </div>
+    <div class="w3-padding-64">
+      <a href="#" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">Home</a>
+      <a href="#work" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">My Work</a>
+      <a href="#work" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">Resume</a>
+      <a href="#contact" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Contact</a>
+    </div>
+  </div>
+  <div class="w3-half w3-blue-grey w3-container" style="height:700px">
+    <div class="w3-padding-64 w3-center">
+      <h1>About Me</h1>
+      <img src="/w3images/avatar3.png" class="w3-margin w3-circle" alt="Person" style="width:50%">
+      <div class="w3-left-align w3-padding-large">
+        <p>I'm a mechanical engineer</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-  	<body>
-		<header>
-			<h1>Berke Tuna</h1>
-		</header>
-			
-		<nav>
-			<ul class="navigation-top">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-			  
-			<form>
-				<input type="search" name="q" placeholder="Search query">
-				<input type="submit" value="Go!">
-			</form>
-			  
-		</nav>
-			
+<!-- Second Grid: Work & Resume -->
+<div class="w3-row">
+  <div class="w3-half w3-light-grey w3-center" style="min-height:800px" id="work">
+    <div class="w3-padding-64">
+      <h2>My Work</h2>
+    </div>
+    <div class="w3-row">
+      <div class="w3-half">
+        <img src="" style="width:100%">
+      </div>
+      <div class="w3-half">
+        <img src="" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-row w3-hide-small">
+      <div class="w3-half">
+        <img src="" style="width:100%">
+      </div>
+      <div class="w3-half">
+        <img src="" style="width:100%">
+      </div>
+    </div>
 
-		<main>
-		</main>
+    <div class="w3-row w3-hide-small">
+      <div class="w3-half">
+        <img src="/w3images/sound.jpg" style="width:100%">
+      </div>
+      <div class="w3-half">
+        <img src="/w3images/workbench.jpg" style="width:100%">
+      </div>
+    </div><br>
+  </div>
+  <div class="w3-half w3-indigo w3-container" style="min-height:800px">
+    <div class="w3-padding-64 w3-center">
+      <h2>Resume</h2>
+      <div class="w3-container w3-responsive">
+        <table class="w3-table">
+          <tr>
+            <th>Year</th>
+            <th>Title</th>
+            <th>Where</th>
+          </tr>
+          <tr class="w3-white">
+            <td>08/2019-Present</td>
+            <td>Junior Mechanical Engineer</td>
+            <td>Vogelsitze GmbH / Karlsruhe, Germany</td>
+          </tr>
+          <tr>
+            <td>2014-2019</td>
+            <td>Degree in Mechanical Engineering</td>
+            <td>Koç University / Istanbul, Turkey</td>
+          </tr>
+          <tr class="w3-white">
+            <td>06/2018-08/2018</td>
+            <td>Intern Mechanical Engineer</td>
+            <td>Brusa Seating A.Ş / Bursa, Turkey</td>
+          </tr>
+          <tr>
+            <td>06/2017-08-2018</td>
+            <td>Intern Mechanical Engineer</td>
+            <td>TGM Lightweight Design GmbH / Berlin, Germany</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
 
-		<footer>
-            <p>©Copyright 2020 by Berke Tuna. All rights reversed.</p>
-        </footer>
-  	</body>
+<!-- Third Grid: Swing By & Contact -->
+<div class="w3-row" id="contact">
+  <div class="w3-half w3-dark-grey w3-container w3-center" style="height:700px">
+    <div class="w3-padding-64">
+      <h1>Info</h1>
+    </div>
+    <address class="w3-padding-64">
+      Karlsruhe<br>
+      Baden-Württemberg<br>
+      Germany<br>
+      Mobile: +49 1622644639<br>
+      Mail: btuna14@ku.edu.tr<br>
+      url:<a href="https://berketuna.github.io/">berketuna.github.io<br>
+    </address>
+  </div>
+  <div class="w3-half w3-teal w3-container" style="height:700px">
+    <div class="w3-padding-64 w3-padding-large">
+      <h1>Contact</h1>
+      <form class="w3-container w3-card w3-padding-32 w3-white" action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Name">
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Email">
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input" style="width:100%;" type="text" required name="Message">
+        </div>
+        <button type="submit" class="w3-button w3-teal w3-right">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
 
+<!-- Footer -->
+<footer class="w3-container w3-black w3-padding-16">
+  <p>Berke Tuna 2020 </p>
+</footer>
+
+</body>
 </html>
